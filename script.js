@@ -6,14 +6,15 @@ const archiver = require('archiver');
 const stream = require('stream');
 const Buffer = require('buffer').Buffer;
 
-const interface = require("/index.html")
+// const interface = require("/index.html")
 
 const port = process.env.PORT ?? 3333
 
 const app = express();
+
 app.use(fileUpload());
 
-app.use("/form", interface);
+// app.use("/form", interface);
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
