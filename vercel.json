@@ -5,5 +5,8 @@
   "builds": [
     { "src": "*.html", "use": "@vercel/static" },
     { "src": "*.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/split", "methods": ["POST"], "dest": "/script.js" }
   ]
 }
