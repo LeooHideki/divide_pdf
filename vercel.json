@@ -2,5 +2,8 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/" }
   ],
-  "public": true
+  "builds": [
+    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "*.js", "use": "@vercel/node" }
+  ]
 }
