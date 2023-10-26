@@ -1,9 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>dividirPDF</title>
+
+    <style>
+        html{
+            
+            font-size: 120%;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            padding: 2rem;
+            border: 1px solid black;
+        }
+        
+        button{
+            height: 2rem;
+            border-radius: 2rem;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <form action="/split" method="post" enctype="multipart/form-data">
