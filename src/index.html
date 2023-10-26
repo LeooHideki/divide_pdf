@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/split" method="post" enctype="multipart/form-data">
+        <label for="pdfFile">Selecione um arquivo PDF:</label>
+    <input type="file" name="pdf" id="pdfFile" accept=".pdf" required>
+    <br>
+    <label for="excelFile">Selecione um arquivo Excel:</label>
+    <input type="file" name="excel" id="excelFile" accept=".xlsx" required>
+    <br>
+    <button type="submit">Dividir PDF</button>
+
+    </form>
+</body>
+</html>
