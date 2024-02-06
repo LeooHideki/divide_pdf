@@ -72,6 +72,3 @@ app.post('/split', async (req, res) => {
 app.listen(port, '0.0.0.0', () => {
   console.log(`HTTP Server running ${port}`);
 });
-// app.listen(3000, () => {
-//   console.log('Servidor rodando na porta 3000');
-// });
